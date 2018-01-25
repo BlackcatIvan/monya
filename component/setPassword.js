@@ -45,7 +45,7 @@ module.exports=require("./setPassword.html")({
           return coinUtil.makePairsAndEncrypt({
             entropy:this.$store.state.entropy,
             password:this.password,
-            makeCur:["mona"]
+            makeCur:["btc"]
           })
         })
       }

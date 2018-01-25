@@ -108,8 +108,10 @@ exports.decryptKeys=(option)=>new Promise((resolve, reject) => {
   
 exports.copy=data=>{
   if (window.cordova) {
+    window.alert("Copying using cordova Plugin")
     window.cordova.plugins.clipboard.copy(data)
   }else{
+    window.alert("Copying using Browser command")
     const temp = document.createElement('div');
 
     temp.textContent = data;
